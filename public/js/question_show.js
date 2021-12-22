@@ -8,7 +8,7 @@
      $.ajax({
          url: '/comments/10/vote/'+$link.data('direction'),
          method: 'POST'
-     }).then(function(data) {
-         $container.find('.js-vote-total').text(data.votes);
+     }).then(function(response) {
+         $container.find('.js-vote-total').text(response.votes);
      });
  });
