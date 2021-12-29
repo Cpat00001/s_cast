@@ -28,7 +28,7 @@ class QuestionController extends AbstractController
     public function show($slug)
     {
         $answers = [
-            'Make sure your cat is sitting purrrfectly still 🤣',
+            'Make sure your cat is sitting `purrrfectly` still 🤣',
             'Honestly, I like furry shoes better than MY cat',
             'Maybe... try saying the spell backwards?',
         ];
