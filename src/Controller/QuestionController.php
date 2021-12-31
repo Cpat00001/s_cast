@@ -39,6 +39,7 @@ class QuestionController extends AbstractController
         $cachedQuestionText = $cache->get('markdown_'.md5($questionText), function() use($questionText){
             return $questionText;
         });
+        // dd(phpinfo());
         dump($cache);
 
         return $this->render('question/show.html.twig',[
